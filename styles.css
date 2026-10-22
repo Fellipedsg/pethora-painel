@@ -445,3 +445,21 @@ input[type="color"].input { width: 54px; padding: 4px; }
 .rem.ok { color: var(--ok); }
 .rem.bad { color: var(--bad); }
 .ticket .small svg { width: 14px; height: 14px; vertical-align: -2px; }
+/* sinal / Pix */
+.policy { display: grid; gap: 8px; padding: 14px 16px; border-radius: 12px; background: var(--brand-soft); font-size: 14px; }
+.pix-amount { display: grid; gap: 2px; justify-items: center; padding: 14px; border-radius: 14px; background: var(--brand-soft); }
+.pix-amount span { font-size: 13px; color: var(--muted); font-weight: 600; }
+.pix-amount b { font-family: var(--font-display); font-size: 32px; font-weight: 700; }
+.pix-amount small { color: var(--muted); }
+#pix-box { display: grid; gap: 10px; text-align: left; }
+.pix-qr { width: 220px; height: 220px; margin: 0 auto; border-radius: 12px; background: #fff; padding: 8px; image-rendering: pixelated; }
+.pix-qr.fake { display: grid; place-items: center; align-content: center; gap: 8px; color: #555; border: 2px dashed #bbb; font-size: 13px; }
+.pix-qr.fake svg { width: 48px; height: 48px; }
+#pix-code { font-size: 12px; word-break: break-all; min-height: 70px; }
+.pix-wait { display: flex; gap: 8px; align-items: center; justify-content: center; font-size: 14px; }
+.pix-wait .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--warn); animation: pulse 1.2s infinite ease-in-out; }
+@keyframes pulse { 50% { opacity: .3; transform: scale(.7); } }
+.pill.pix { background: color-mix(in srgb, var(--warn) 14%, transparent); color: var(--warn); }
+.dep { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.dep.ok { color: var(--ok); } .dep.wait { color: var(--warn); } .dep.bad { color: var(--bad); }
+.choice { display: grid; gap: 8px; padding: 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); }
